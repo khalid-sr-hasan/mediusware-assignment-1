@@ -1,14 +1,15 @@
 * {
+    margin: 0;
     padding: 0;
     outline: 0;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sectionOne {
+    margin: 10px auto 0px auto;
     margin-bottom: 100px;
+    max-width: 1190px;
 }
 
 .header,
@@ -19,6 +20,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: 10px;
 }
 
 .nav {
@@ -32,14 +38,15 @@ body {
 .middleBody {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .leftSide,
 .rightSide {
     column-span: 1/2;
-    height: 600px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .section,
@@ -67,16 +74,27 @@ body {
     background: #fce7f6;
 }
 
-.aside {
+.rightSide {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sectionTwo {
+    margin: 10px;
+    margin-bottom: 100px;
+}
+
+.sectionTwo h1 {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .achievements-section {
     background-color: #f0f8ff;
     padding: 60px 20px;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .achievements-title {
@@ -98,59 +116,21 @@ body {
 }
 
 .awards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1190px;
     margin: 0 auto;
 }
 
-.award-card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.awards-container img {
+    width: 100%;
 }
 
-.clutch-rating {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.clutch-logo {
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.rating {
-    color: #333;
-    font-weight: 500;
-}
-
-.stars {
-    color: #ff4500;
-}
-
-.google-stars {
-    color: #ffd700;
-}
-
-.upwork-badge {
-    color: #14a800;
-    font-weight: bold;
-}
-
-.top-badge {
-    color: #0056b3;
-    font-weight: bold;
+.sectionFour {
+    max-width: 1190px;
+    margin: auto;
+    margin-bottom: 100px;
 }
 
 .newsletter-container {
@@ -166,10 +146,6 @@ body {
     gap: 8px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.newsLetterFrom {
-    padding-top: 20px;
 }
 
 @media (min-width: 640px) {
@@ -231,32 +207,40 @@ body {
     background-color: #0284c7;
 }
 
+.sectionFive {
+    max-width: 1190px;
+    margin: auto;
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.profile-section {
-    flex: 1;
-    min-width: 300px;
-}
-
-.profile-card {
-    background-color: #e0f2f1;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .profile-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
+}
+
+.name-status {
+    position: relative;
+}
+
+.status-card {
+    position: absolute;
+    bottom: 19px;
+    left: 195px;
+    background-color: #e0f2f1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.profile-card {
+    /* background-color:  */
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .profile-name {
@@ -288,11 +272,19 @@ body {
     font-size: 14px;
     color: #475569;
     margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.blue-card {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .book-call {
     font-size: 14px;
     color: #475569;
+    margin-top: 10px;
 }
 
 .lets-talk {
@@ -306,7 +298,7 @@ body {
 .form-section {
     flex: 2;
     min-width: 300px;
-    background-color: #f8fafc;
+    background-color: #f0f8ff;
     padding: 20px;
     border-radius: 12px;
 }
@@ -358,6 +350,11 @@ body {
     font-size: 14px;
     min-height: 120px;
     resize: vertical;
+}
+
+.submit-div {
+    display: flex;
+    justify-content: end;
 }
 
 .submit-button {
